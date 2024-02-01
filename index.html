@@ -11,20 +11,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Stick+No+Bills:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
-
+<a class="skip-to-content-link" href="#main">
+  Skip to content
+</a>
 <body>
   <div class="container">
     <div class="site-header">
       <h1>Jam Box Studios</h1>
       <div class="main-nav">
-        <ul>
+        <ul itemscope itemtype="https://schema.org/Person">
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
           <li><a href="#">Reservation</a></li>
           <li><a href="#">Studio</a></li>
         </ul>
       </div>
-      <img src="https://placekitten.com/1200/900" alt="picture of a cat"  class="banner">
+      <img src="https://placekitten.com/1200/900" alt="picture of a black and browish colored cat on someone's hand"  class="banner">
     </div>
     <div class="main-content">
       <h1>Welcome to Jam Box</h1>
@@ -49,20 +51,18 @@
       <div class="contact-section">
         <h1>Contact Us</h1>
         <form action="thanks.html">
-          <label>Full Name</label>
-          <input type="text" name="search" aria-label="Search" placeholder="Full Name">
-          <input type="text" name="search" aria-label="Search" placeholder="Email">
-          <input type="text" name="search" aria-label="Search" placeholder="Subject">
-          <strong>Your Message</strong>
-          <textarea></textarea>
-          <button type="submit">Send</button>
+          <label>Full name<input type="text" id="fullName" name="search" aria-label="Search" placeholder="Full Name"></label>
+          <label>Email<input type="text" id="email" name="search" aria-label="Search" placeholder="Email"></label>
+          <label>Subject<input type="text" id="subject" name="search" aria-label="Search" placeholder="Subject"></label>
+          <label>Your Message<textarea></textarea></label>
+          <button type="submit" aria-label="Click me">Send</button>
 
         </form>
       </div>
     </div>
    <footer>
      <div class="site-footer">
-      &copy; 2021 Jam Box Studios
+      &copy;2021 Jam Box Studios
      </div>
   </footer>
   </div>
